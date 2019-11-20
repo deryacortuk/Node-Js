@@ -1,4 +1,5 @@
 # Node.js  File System Module
+
 The Node.js file system module allows you to work with the file system on your computer.
 
 To include the File System module, use the  `require()`  method:
@@ -48,6 +49,7 @@ For example:
 
 
 ## Chalk
+
 ![enter image description here](https://cdn.jsdelivr.net/gh/chalk/ansi-styles@8261697c95bf34b6c7767e2cbe9941a851d59385/screenshot.svg)
 
 There are npm modules for pretty much anything you can want to do with Node.js. Chalk comes with an easy to use composable API where you just chain and nest the styles you want.
@@ -65,6 +67,7 @@ There are npm modules for pretty much anything you can want to do with Node.js. 
 
 [npm : Chalk ](https://www.npmjs.com/package/chalk#install)
 
+
 ## npm Modules and nodemon
 
  You can use npm modules from outside of your scripts by installing them globally. Globally installed modules are designed to be used from the terminal and provide you with new commands you can run. 
@@ -81,7 +84,9 @@ A globally installed module is not added as a dependency to your project. That m
 
 P.S. You can stop nodemon by using ctrl + c from the terminal! 
 
+
 # Request - Simplified HTTP client
+
 ![enter image description here](https://nodei.co/npm/request.png?downloads=true&downloadRank=true&stars=true)
 
 There are several libraries that make it easy to fire off HTTP requests. . You can install it using the command below. 
@@ -95,11 +100,12 @@ Before you use the library in your app, you will need to figure out which URL yo
     const url = 'https://api.darksky.net/forecast/9d1465c6f3bb7a6c71944bdd8548d026/37.8267,122.4233' 
      
     request({ url, json: true }, (err, res) => { console.log(res.body.daily.data[0].summary + ' It is currently ' + res.body.currently.temperature + ' degrees out. There is a ' + res.body.currently.precipProbability + '% chance of rain.') })
+    
 
 ## Handling Errors
 There are plenty of reasons an HTTP request can fail. Maybe your machine does not  have an internet connection, or maybe the URL is incorrect. Handling errors is important.
 
->  
+
 
 ## The Callback Function
 
@@ -121,7 +127,9 @@ first();
 second();
 ```
 
+
 ## ES6 : Object Property Shorthand and Destructuring
+
 ***Property Shorthand*** 
 The property shorthand makes it easier to define properties when creating a new object. It provides a shortcut for defining a property whose value comes from a variable of the same name. 
 
@@ -152,13 +160,14 @@ The second ES6 feature is object destructuring. Object destructuring gives you a
 >   age: 30,  
 >    location: 'London'
 > }   
->  ***/The line below uses destructuring***
+>  ***//The line below uses destructuring***
 
 >  const { age, location:address } = user    
 > console.log(age) 
 > console.log(address)
 
 ***Destructuring Function Arguments*** 
+
 Destructuring works with function parameters as well. If an object is passed into a function, it can be destructured inside the function definition. 
 
 const product = {  
@@ -176,6 +185,7 @@ transaction('order', product)
  
 
 ## Storing Data with JSON
+
 JSON, which stands for JavaScript Object Notation, is a lightweight data format. JSON makes it easy to store or transfer data. 
 Since JSON is nothing more than a string, it can be used to store data in a text file or transfer data via an HTTP requests between two machines. 
 
@@ -195,15 +205,18 @@ JavaScript provides two methods for working with JSON. The first is JSON.stringi
 
  
  ***Shorthand Syntax*** 
+ 
 Arrow functions have an optional shorthand syntax. This is useful when you have a function that immediately returns a value. 
 
 > const squareAlt = (x) => x * x  
 > console.log(squareAlt(11)) 
 > // Will print: 121
 
- First, the curly braces wrapping the function body have been removed as well as the return statement. In place of both is the value to be returned. There’s no need for an explicit return statement, as the value provide is implicitly returned. 
+ First, the curly braces wrapping the function body have been removed as well as the return statement. In place of
+  both is the value to be returned. There’s no need for an explicit return statement, as the value provide is implicitly returned. 
  
  ***This Binding***
+ 
  Arrow functions do not  bind their own this value. Instead, the this value of the scope in which it was defined is accessible. This makes arrow functions bad candidates for methods, as this won’t be a reference to the object the method is defined on. For methods, ES6 provides a new method definition syntax.
 
  
@@ -221,12 +234,16 @@ When running asynchronous code, your code will not always execute in the order y
 > console.log('Stop)
 > 
 //Run the script and you will see the logs in the following order. 
+
 > Start
+
 >  Stop 
+
 >   Seven Times
 
 
 ## yargs
+
 ![enter image description here](https://raw.githubusercontent.com/yargs/yargs/HEAD/yargs-logo.png)
 Yargs helps you build interactive command line tools, by parsing arguments and generating an elegant user interface. Yargs provides a powerful set of tools for composing modular command-driven-applications.
 
