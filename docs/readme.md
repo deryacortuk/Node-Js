@@ -108,7 +108,8 @@ Before you use the library in your app, you will need to figure out which URL yo
     const request = require('request')  
     const url = 'https://api.darksky.net/forecast/9d1465c6f3bb7a6c71944bdd8548d026/37.8267,122.4233' 
      
-    request({ url, json: true }, (err, res) => { console.log(res.body.daily.data[0].summary + ' It is currently ' + res.body.currently.temperature + ' degrees out. There is a ' + res.body.currently.precipProbability + '% chance of rain.') })
+    request({ url, json: true }, (err, res) => { console.log(res.body.daily.data[0].summary + ' It is currently ' + res.body.currently.temperature + ' degrees out.
+    There is a ' + res.body.currently.precipProbability + '% chance of rain.') })
     
 
 ## Handling Errors
@@ -147,8 +148,11 @@ The property shorthand makes it easier to define properties when creating a new 
 > const name = 'Alex' 
 >  const age = 30  
 >  const user = {    
+
 >    name: name, 
-> age: age,       
+
+> age: age,    
+
 >  location: 'London'
 >   }
 >   
