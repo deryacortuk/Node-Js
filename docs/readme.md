@@ -1,5 +1,6 @@
 # Node.js  File System Module
 
+
 The Node.js file system module allows you to work with the file system on your computer.
 
 To include the File System module, use the  `require()`  method:
@@ -87,6 +88,7 @@ P.S. You can stop nodemon by using ctrl + c from the terminal!
 
 # Request - Simplified HTTP client
 
+
 ![enter image description here](https://nodei.co/npm/request.png?downloads=true&downloadRank=true&stars=true)
 
 There are several libraries that make it easy to fire off HTTP requests. . You can install it using the command below. 
@@ -103,6 +105,7 @@ Before you use the library in your app, you will need to figure out which URL yo
     
 
 ## Handling Errors
+
 There are plenty of reasons an HTTP request can fail. Maybe your machine does not  have an internet connection, or maybe the URL is incorrect. Handling errors is important.
 
 
@@ -131,6 +134,7 @@ second();
 ## ES6 : Object Property Shorthand and Destructuring
 
 ***Property Shorthand*** 
+
 The property shorthand makes it easier to define properties when creating a new object. It provides a shortcut for defining a property whose value comes from a variable of the same name. 
 
 > const name = 'Alex' 
@@ -153,6 +157,7 @@ The property shorthand makes it easier to define properties when creating a new 
 >         console.log(user)
 
 ***Object Destructuring*** 
+
 The second ES6 feature is object destructuring. Object destructuring gives you a syntax for pulling properties off of objects and into standalone variables. This is useful when working with the same object properties throughout your code. 
 
 > const user = {  
@@ -165,6 +170,7 @@ The second ES6 feature is object destructuring. Object destructuring gives you a
 >  const { age, location:address } = user    
 > console.log(age) 
 > console.log(address)
+
 
 ***Destructuring Function Arguments*** 
 
