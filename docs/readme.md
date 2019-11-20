@@ -242,9 +242,12 @@ When running asynchronous code, your code will not always execute in the order y
 
 > console.log('Start')  
 >  // Wait 7 seconds before running the function 
+
 > setTimeout(() => { 
+
 >      console.log('Seven Times')  
->      }, 7000)   
+>      },
+7000)   
 > console.log('Stop)
 > 
 //Run the script and you will see the logs in the following order. 
