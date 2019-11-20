@@ -5,7 +5,7 @@ The Node.js file system module allows you to work with the file system on your c
 
 To include the File System module, use the  `require()`  method:
 
->     var  fs = require('fs');
+>   
 >     const fs = require('fs') 
 >     fs.writeFileSync('files.json', 'Javascript')
 
