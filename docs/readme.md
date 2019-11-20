@@ -158,7 +158,8 @@ The property shorthand makes it easier to define properties when creating a new 
 >     age,   
 >       location: 'London' 
 >       } 
->         console.log(user)
+>        
+console.log(user)
 
 
 ***Object Destructuring*** 
