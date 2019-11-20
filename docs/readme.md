@@ -51,6 +51,7 @@ For example:
 
 ## Chalk
 
+
 ![enter image description here](https://cdn.jsdelivr.net/gh/chalk/ansi-styles@8261697c95bf34b6c7767e2cbe9941a851d59385/screenshot.svg)
 
 There are npm modules for pretty much anything you can want to do with Node.js. Chalk comes with an easy to use composable API where you just chain and nest the styles you want.
@@ -69,6 +70,7 @@ There are npm modules for pretty much anything you can want to do with Node.js. 
 [npm : Chalk ](https://www.npmjs.com/package/chalk#install)
 
 
+
 ## npm Modules and nodemon
 
  You can use npm modules from outside of your scripts by installing them globally. Globally installed modules are designed to be used from the terminal and provide you with new commands you can run. 
@@ -83,7 +85,9 @@ A globally installed module is not added as a dependency to your project. That m
 
 > nodemon app.js
 
+
 P.S. You can stop nodemon by using ctrl + c from the terminal! 
+
 
 
 # Request - Simplified HTTP client
@@ -155,6 +159,7 @@ The property shorthand makes it easier to define properties when creating a new 
 >       location: 'London' 
 >       } 
 >         console.log(user)
+
 
 ***Object Destructuring*** 
 
