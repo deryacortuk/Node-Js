@@ -148,11 +148,8 @@ The property shorthand makes it easier to define properties when creating a new 
 > const name = 'Alex' 
 >  const age = 30  
 >  const user = {    
-
 >    name: name, 
-
 > age: age,    
-
 >  location: 'London'
 >   }
 >   
