@@ -81,7 +81,10 @@ There are npm modules for pretty much anything you can want to do with Node.js. 
     npm install -g nodemon@1.19.4
     
     npm install --save-dev nodemon
+    
+    
 A globally installed module is not added as a dependency to your project. That means you won’t see it listed in package.json or package-lock.json. You also will not  find its code in node_modules. Globally installed modules are located in a special directory in your machine which is created and managed by npm. When you install nodemon globally, you get access a new nodemon command from the terminal. This can be used to start and Node.js application and then restart the application any of the app scripts change. This means you will not need to switch between the terminal and text editor to restart your application every time you make a change. The command below runs app.js through nodemon. 
+
 
 > nodemon app.js
 
