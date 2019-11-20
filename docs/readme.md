@@ -213,6 +213,7 @@ JavaScript provides two methods for working with JSON. The first is JSON.stringi
 >  const square = (x) => {   
 >     return x * x    }  
 >      console.log(square(7))   
+
 >        // Will print: 49
 
  
@@ -222,7 +223,8 @@ Arrow functions have an optional shorthand syntax. This is useful when you have 
 
 > const squareAlt = (x) => x * x  
 > console.log(squareAlt(11)) 
-> // Will print: 121
+> 
+// Will print: 121
 
  First, the curly braces wrapping the function body have been removed as well as the return statement. In place of
   both is the value to be returned. There’s no need for an explicit return statement, as the value provide is implicitly returned. 
